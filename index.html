@@ -19,18 +19,43 @@
       <div class="navbar-collapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
+            <img
+              class="nav-icon"
+              src="assets/home_FILL0_wght300_GRAD0_opsz24.svg"
+              alt=""
+            />
             <a class="nav-link active" href="#">Overview</a>
           </li>
           <li class="nav-item">
+            <img
+              class="nav-icon"
+              src="assets/group_FILL0_wght300_GRAD0_opsz24.svg"
+              alt=""
+            />
             <a class="nav-link" href="#">Patients</a>
           </li>
           <li class="nav-item">
+            <img
+              class="nav-icon"
+              src="assets/calendar_today_FILL0_wght300_GRAD0_opsz24.svg"
+              alt=""
+            />
             <a class="nav-link" href="#">Schedule</a>
           </li>
           <li class="nav-item">
+            <img
+              class="nav-icon"
+              src="assets/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg"
+              alt=""
+            />
             <a class="nav-link" href="#">Message</a>
           </li>
           <li class="nav-item">
+            <img
+              class="nav-icon"
+              src="assets/credit_card_FILL0_wght300_GRAD0_opsz24.svg"
+              alt=""
+            />
             <a class="nav-link" href="#">Transactions</a>
           </li>
         </ul>
@@ -66,67 +91,19 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Diagnosis History</h5>
-              <canvas id="bloodPressureChart"></canvas>
+              <canvas class="bg" id="bloodPressureChart"></canvas>
               <div class="diagnosis-stats mt-3">
-                <p>Systolic: 160 - Higher than Average</p>
-                <p>Diastolic: 78 - Lower than Average</p>
+                <!-- content -->
               </div>
             </div>
           </div>
 
           <!-- Stats  -->
-          <div class="row">
-            <div class="col-md-4">
-              <div class="stat-card">
-                <div class="icon">
-                  <img
-                    src="assets/respiratory rate.svg"
-                    alt="Respiratory Rate Icon"
-                    width="50"
-                  />
-                </div>
-                <div>
-                  <h6>Respiratory Rate</h6>
-                  <p>20 bpm</p>
-                  <small>Normal</small>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="stat-card">
-                <div class="icon">
-                  <img
-                    src="assets/temperature.svg"
-                    alt="Temperature Icon"
-                    width="50"
-                  />
-                </div>
-                <div>
-                  <h6>Temperature</h6>
-                  <p>98.6°F</p>
-                  <small>Normal</small>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="stat-card">
-                <div class="icon">
-                  <img
-                    src="assets/HeartBPM.svg"
-                    alt="Heart Rate Icon"
-                    width="50"
-                  />
-                </div>
-                <div>
-                  <h6>Heart Rate</h6>
-                  <p>78 bpm</p>
-                  <small>Lower than Average</small>
-                </div>
-              </div>
-            </div>
+          <div class="row" id="stats-container">
+            <!-- content  -->
           </div>
 
-          <!-- Diagnostic  -->
+          <!--  List -->
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Diagnostic List</h5>
@@ -139,11 +116,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Hypertension</td>
-                    <td>Chronic high blood pressure</td>
-                    <td>Under Observation</td>
-                  </tr>
+                  <!-- content -->
                 </tbody>
               </table>
             </div>
@@ -157,14 +130,14 @@
           <div class="profile-card">
             <img src="assets/Layer 2@2x.png" alt="Jessica Taylor" />
             <div class="profile-card-info">
-              <h5>Jessica Taylor</h5>
+              <h5></h5>
               <p>
                 <img
                   src="assets/calendar_today_FILL0_wght300_GRAD0_opsz24.svg"
                   class="icon"
                   alt="Calendar Icon"
                 />
-                Date of Birth: <strong>August 23, 1996</strong>
+                Date of Birth: <strong></strong>
               </p>
               <p>
                 <img
@@ -172,11 +145,11 @@
                   class="icon"
                   alt="Gender Icon"
                 />
-                Gender: <strong>Female</strong>
+                Gender: <strong></strong>
               </p>
               <p>
                 <img src="assets/PhoneIcon.svg" class="icon" alt="Phone Icon" />
-                Contact Info: <strong>(415) 555-1234</strong>
+                Contact Info: <strong></strong>
               </p>
               <p>
                 <img
@@ -184,7 +157,7 @@
                   class="icon"
                   alt="Emergency Contact Icon"
                 />
-                Emergency Contacts: <strong>(415) 555-5678</strong>
+                Emergency Contacts: <strong></strong>
               </p>
               <p>
                 <img
@@ -192,37 +165,18 @@
                   class="icon"
                   alt="Insurance Icon"
                 />
-                Insurance Provider: <strong>Sunrise Health Assurance</strong>
+                Insurance Provider: <strong></strong>
               </p>
             </div>
             <button class="btn-show-info">Show All Information</button>
           </div>
 
-          <!-- Lab  -->
+          <!-- Lab Results -->
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Lab Results</h5>
               <div class="lab-results">
-                <div class="lab-result-item">
-                  <span>Blood Tests</span>
-                  <button class="btn btn-link">
-                    <img
-                      src="assets/download_FILL0_wght300_GRAD0_opsz24 (1).svg"
-                      alt="Download icon"
-                      width="20"
-                    />
-                  </button>
-                </div>
-                <div class="lab-result-item">
-                  <span>CT Scans</span>
-                  <button class="btn btn-link">
-                    <img
-                      src="assets/download_FILL0_wght300_GRAD0_opsz24 (1).svg"
-                      alt="Download icon"
-                      width="20"
-                    />
-                  </button>
-                </div>
+                <!-- content -->
               </div>
             </div>
           </div>
@@ -230,7 +184,7 @@
       </div>
     </div>
 
-    <!-- Script -->
+    <!-- script -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="script.js"></script>
   </body>
